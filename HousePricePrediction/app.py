@@ -15,7 +15,7 @@ import os
 # -------------------------------
 
 @st.cache_resource
-def load_model(model_path="model.pkl"):
+def load_model(model_path="HousePricePrediction/model.pkl"):
     """Load trained model from disk."""
     if not os.path.exists(model_path):
         st.error("Model file not found. Please run main.py to train the model first.")
