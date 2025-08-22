@@ -42,7 +42,7 @@ def train_model(df: pd.DataFrame):
     return model
 
 
-def save_model(model, path="model.pkl"):
+def save_model(model, path="HousePricePrediction/model.pkl"):
     """Save trained model to disk."""
     joblib.dump(model, path)
     print(f"Model saved to {path}")
